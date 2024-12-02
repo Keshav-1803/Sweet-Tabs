@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SweetTabs</string>
+    <string name="sweet_image">Sweet Image</string>
+
+    <string-array name="sweet_names">
+        <item>Boomer</item>
+        <item>Bournville</item>
+        <item>Dairy Milk</item>
+        <item>Doublemint</item>
+        <item>Ferrero Rocher</item>
+        <item>Five Star</item>
+        <item>Galaxy</item>
+        <item>Gulab Jamun</item>
+        <item>Hajmola</item>
+        <item>Hershey\'s</item>
+        <item>Kaccha Mango Bite</item>
+        <item>Kalakand</item>
+        <item>Kit Kat</item>
+        <item>Laddu</item>
+        <item>M&amp;M\'s</item>
+        <item>Milkybar</item>
+        <item>Rasgulla</item>
+        <item>Sandesh</item>
+        <item>Snickers</item>
+        <item>Toblerone</item>
+    </string-array>
+</resources>
