@@ -1,25 +1,24 @@
 package com.example.sweettabs
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class SweetListFragment : Fragment() {
+class SweetGridFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_sweet_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_sweet_grid, container, false)
 
-        val recyclerView: RecyclerView = view.findViewById(R.id.recycler_view)
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = SweetListAdapter(getSweetList())
+        val recyclerView: RecyclerView = view.findViewById(R.id.recycler_view_grid)
+        recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
+        recyclerView.adapter = SweetGridAdapter(getSweetList())
         recyclerView.setPadding(0, 0, 0, 200)
         recyclerView.clipToPadding = false
 

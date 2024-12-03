@@ -11,7 +11,7 @@ class ViewPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activ
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             0 -> SweetListFragment()
-            // 1 -> SweetGridFragment()
+            1 -> SweetGridFragment()
             else -> throw IllegalStateException("Unexpected position $position")
         }
     }
