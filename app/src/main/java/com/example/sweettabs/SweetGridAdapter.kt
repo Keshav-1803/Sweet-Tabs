@@ -7,8 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class SweetListAdapter(private val sweetList: List<Sweet>) :
-    RecyclerView.Adapter<SweetListAdapter.SweetViewHolder>() {
+class SweetGridAdapter(private val sweetList: List<Sweet>) :
+    RecyclerView.Adapter<SweetGridAdapter.SweetViewHolder>() {
 
     class SweetViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val sweetName: TextView = itemView.findViewById(R.id.sweet_name)
@@ -17,7 +17,7 @@ class SweetListAdapter(private val sweetList: List<Sweet>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SweetViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_sweet_list, parent, false)
+            .inflate(R.layout.item_sweet_grid, parent, false)
         return SweetViewHolder(view)
     }
 
